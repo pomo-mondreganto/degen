@@ -1,0 +1,12 @@
+version: '2.4'
+
+services:
+  decoder:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    restart: unless-stopped
+    ports:
+      - "${DECODER_PORT:-8001}:5000"
+    environment:
+      PORT: 5000

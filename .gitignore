@@ -1,0 +1,7 @@
+.idea
+.DS_Store
+__pycache__
+
+service/generated.py
+service/models.py
+service/requirements.txt
